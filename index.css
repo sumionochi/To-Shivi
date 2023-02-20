@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+    
+            body {
+                font-family:'Cutive Mono', serif;
+                background-color: burlywood; 
+                color: rgb(43, 50, 71);
+                padding: 0%;
+                margin: 0;
+            }
+
+            html{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0%;
+                margin: 0 ;
+            }
+    
+            a {
+                color: #222;
+            }
+    
+            .wrap {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+    
+            .secret_message {
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 2rem;
+                text-decoration:underline;
+            }
+
+            .start{
+                width: 5rem;
+                font-family: monospace;
+            }
