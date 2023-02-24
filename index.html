@@ -10,9 +10,10 @@
 <body>
     <div class="container">
         <div class="wrap">
-            <a href="#" class="start"><img class="start" src="./resource/koala.png" alt="🐨"></a>
+            <a href="#" class="start"><img class="start" src="./resource/koala1.png" alt="🐨" tabindex="0"></a>
             <div class="secret_message" 
-            data-text="<a href=./n1.html>To Shivi.</a>">
+            data-text="<a class='secchild' href=./n1.html>To Shivi.</a>">
+            i wonder if there's a secret message hidden here.
             </div>
         </div>
     </div>
@@ -24,11 +25,11 @@
         var running = false;
         function typeWriter(text, n) {
             if (n < (text.length)) {
-                $('.secret_message').html(text.substring(0, n + 1) + "<img src='./resource/heart.png' alt='❤'>");
+                $('.secret_message').html(text.substring(0, n + 1) + "<img class='heart' src='./resource/heart.png' alt='❤'>");
                 n++;
                 setTimeout(function () {
                     typeWriter(text, n)
-                }, 100);
+                }, 90);
             }
             else {
                 running = false;

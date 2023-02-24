@@ -22,7 +22,11 @@
             a {
                 color: #222;
             }
-    
+            
+            .heart{
+                width: 2.5rem;
+            }
+
             .wrap {
                 width: 100%;
                 margin: 0 auto;
@@ -31,12 +35,44 @@
     
             .secret_message {
                 margin-top: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 text-align: center;
                 font-size: 2rem;
                 text-decoration:underline;
             }
 
             .start{
-                width: 5rem;
-                font-family: monospace;
+                width: 3.5rem;
+                padding: 0.5rem;
+            }
+
+            .secchild{
+                animation: myslide;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes myslide{
+                50%{
+                    color: rgb(209, 4, 100);
+                }
+            }
+
+            .start img{
+                border-style: solid;
+                border-radius: 1rem;
+                box-shadow: 5px 5px 0px rgb(209, 4, 100);
+                animation: myslide2;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes myslide2{
+                50%{box-shadow: 0px 0px 0px rgb(209, 4, 100);}
+            }
+
+            .start img:focus{
+                animation: myslide3; /*use tabindex="0" attribute in css to focus on img. focus used to change state onclick.*/
+                box-shadow: 5px 5px 0px rgb(78, 44, 0);
             }
