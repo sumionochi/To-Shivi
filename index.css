@@ -24,7 +24,7 @@
             }
             
             .heart{
-                width: 2.5rem;
+                width: 1.5rem;
             }
 
             .wrap {
@@ -38,12 +38,12 @@
                 margin-left: 1rem;
                 margin-right: 1rem;
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1rem;
                 text-decoration:underline;
             }
 
             .start{
-                width: 3.5rem;
+                width: 2.5rem;
                 padding: 0.5rem;
             }
 
